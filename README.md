@@ -14,8 +14,7 @@
 This plugin can be installed as a local extension.
 
 ### 1. Download the Plugin
-- **Option A (GitHub)**: Download the latest `sp-grafana.zip` from the **Releases** or **Actions** tab of this repository.
-- **Option B (Local Build)**: Clone this repo and run `./package_local.sh`. The file `sp-grafana-local.zip` will be created in your `~/Downloads` folder.
+- **Option A (GitHub)**: Download the latest `sp-grafana-bridge-x.x.x.zip` from the **Releases** or **Actions** tab of this repository.
 
 ### 2. Load into Super Productivity
 1. Open Super Productivity.
@@ -59,7 +58,7 @@ To develop or modify this plugin:
 1. **Edit Code**: Modify `plugin.js`, `index.html`, etc.
 2. **Package**:
    - Run `./package_local.sh` to create a testable ZIP in `~/Downloads`.
-   - OR push to `main` to trigger the GitHub Action which builds `sp-grafana-local.zip`.
+   - OR push to `main` to trigger the GitHub Action which builds `sp-grafana-bridge-x.x.x.zip`.
 
 ## 📝 License
 
