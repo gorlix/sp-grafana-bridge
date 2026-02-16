@@ -1,0 +1,21 @@
+{
+  "name": "Grafana Bridge",
+  "id": "sp-grafana-bridge",
+  "manifestVersion": 1,
+  "version": "1.5.0",
+  "minSupVersion": "11.0.0",
+  "description": "Bridges Super Productivity tasks with Grafana/InfluxDB.",
+  "hooks": [
+    "taskComplete",
+    "taskUpdate",
+    "currentTaskChange",
+    "finishDay",
+    "taskDelete"
+  ],
+  "permissions": [
+    "nodeExecution"
+  ],
+  "iFrame": true,
+  "sidePanel": true,
+  "uiKit": true
+}
