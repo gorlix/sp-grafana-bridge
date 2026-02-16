@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "minSupVersion": "11.0.0",
   "description": "Bridges Super Productivity tasks with Grafana/InfluxDB.",
+  "icon": "icon.svg",
   "hooks": [
     "taskComplete",
     "taskUpdate",
