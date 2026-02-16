@@ -15,12 +15,20 @@ jobs:
 
       - name: Create Plugin Archive
         run: |
-          # ZIP only the necessary plugin files
-          zip sp-grafana.zip manifest.json index.html plugin.js
+          # Read version from manifest.json
+          VERSION=$(jq -r .version manifest.json)
+          echo "Building version: $VERSION"
+          
+          # Create archive with version in name
+          ZIP_NAME="sp-grafana-bridge-$VERSION.zip"
+          zip "$ZIP_NAME" manifest.json index.html plugin.js icon.svg
+
+          # Set output for next step
+          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: sp-grafana
-          path: sp-grafana.zip
+          name: sp-grafana-bridge-release
+          path: ${{ env.ZIP_NAME }}
           retention-days: 5

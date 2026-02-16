@@ -3,8 +3,8 @@
  * This plugin facilitates real-time and bulk export of task data to a 
  * Grafana/InfluxDB endpoint for advanced productivity analytics.
  * 
- * @version 1.5.2 - Checkpoint Debugging
- * @author Senior Software Architect
+ * @version 0.1.0 - Initial Release
+ * 
  */
 
 (function () {
