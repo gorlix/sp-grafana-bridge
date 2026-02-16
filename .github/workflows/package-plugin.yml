@@ -1,0 +1,26 @@
+name: Package Plugin
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create Plugin Archive
+        run: |
+          # ZIP only the necessary plugin files
+          zip sp-grafana.zip manifest.json index.html plugin.js
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sp-grafana
+          path: sp-grafana.zip
+          retention-days: 5
