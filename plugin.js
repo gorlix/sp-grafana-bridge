@@ -179,7 +179,7 @@
         try {
             PluginAPI.registerSidePanelButton({
                 label: 'Grafana Bridge',
-                icon: 'extension',
+                icon: 'icon.svg',
                 onClick: () => {
                     PluginAPI.renderPluginView('index.html', { cfg: globalConfig });
                 }
