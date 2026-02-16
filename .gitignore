@@ -1,0 +1,12 @@
+
+# Local Scripts
+package_local.sh
+*.sh
+
+# Build Artifacts
+*.zip
+dist/
+
+# System Files
+.DS_Store
+Thumbs.db
