@@ -14,12 +14,12 @@
 This plugin can be installed as a local extension.
 
 ### 1. Download the Plugin
-- **Option A (GitHub)**: Download the latest `sp-grafana-bridge-x.x.x.zip` from the **Releases** or **Actions** tab of this repository.
+- **Option A (GitHub)**: Download the latest `sp-grafana-bridge-x.x.x.zip` from the **Releases** tab of this repository.
 
 ### 2. Load into Super Productivity
 1. Open Super Productivity.
 2. Go to **Settings** -> **Plugins**.
-3. Scroll down to **"Select Web Plugin"**.
+3. Search for **"Install Plugin"**.
 4. Upload the `.zip` file you just downloaded.
 5. Toggle the switch to **Enable** the "Grafana Bridge" plugin.
 
